@@ -20,11 +20,16 @@ In this project, we leverage the power of transformers to perform image segmenta
 To get started with this project, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/your-username/transunet-image-segmentation.git`
+
 2. If running on rivanna, please following the below procedure:
     a. create new conda environment by `conda create --name [your env name] python=3.11`
+
     b. install pytorch with cuda 11.8 by `conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia`
+
     c. install requirements by `pip install -r TransUNet/huiboreq.txt`
+
     d. certain problem with simplestk may need to echo the path of libgcc.
+
 3. If running on specific machine, please follow their original [installation guides](https://github.com/Beckschen/TransUNet).
 
 
