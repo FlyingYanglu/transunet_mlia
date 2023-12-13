@@ -42,7 +42,8 @@ To check the test set performance, please follow these steps.
         2. run `python prepare_dataset.py --data_path [path of TumorSegmentation_data/Segmentation_data/Testing ]`
 
     After preparing dataset, you should see Testing_cases have 19 cases if you are using tumorsegmentation dataset
-2. Download model checkpoint [here]. Unzip the file and put the content of it into the model folder. After unzipping and data preparing, your folder should look like this.
+2. Download model checkpoint [here](https://drive.google.com/file/d/1x0sw_yh4zM4niIHPaKNHmgReOlJXwqEE/view?usp=sharing). Unzip the file and put the content of it into the model folder. After unzipping and data preparing, your folder should look like this.
+```md
     Transunet_mlia
     ├── data/tumor
     │   ├── lists
@@ -54,6 +55,8 @@ To check the test set performance, please follow these steps.
     │   ├── vit_checkpoint
 
     .....
+
+```
 
 3. run `python test.py --dataset tumor --vit_name R50-ViT-B_16`. You could add `--is_savenii` to save image results. Please use software to visualize them or check check_dataset.ipynb for demo of how to visualize results.
 
