@@ -36,7 +36,7 @@ To get started with this project, follow these steps:
 
 ## Usage
 
-To check the test set performance, please follow these steps. 
+To check the **test set** performance, please follow these steps. 
 
 1. Prepare dataset. You should have the TumorSegmentation_data dataset ready. Exampler preparation outputs could be found inside `data\tumor\Testing_cases` folder. We provide two ways you could use to prepare the dataset.
     - Copy datset manually to target position
@@ -68,6 +68,7 @@ You could also download specific checkpoints from this [link](https://drive.goog
 
 3. run `python test.py --dataset tumor --vit_name R50-ViT-B_16`. You could add `--is_savenii` to save image results. Please use software to visualize them or check check_dataset.ipynb for demo of how to visualize results.
 
+To **Train** the model, you need to convert mhd data to npy data, and generate corresponding list.txt file. Please check check_dataset.ipynb for example. 
 
 ## Results
 
