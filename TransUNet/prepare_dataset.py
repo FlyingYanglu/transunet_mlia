@@ -128,9 +128,23 @@ def classify_test_to_cases(test_npz_files, save_folder=None):
 
 if __name__ == "__main__":
 
+    # allow user to specify data path
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--data_path', type=str, default='../data/tumor/raw')
+    args = parser.parse_args()
+    data_path = args.data_path
+    
+
+
+
     print("Converting testing data...")
-    test_image_mhd_files = glob('../data/tumor/raw/Brains/*.mhd')
-    test_label_mhd_files = glob('../data/tumor/raw/Labels/*.mhd')
+    test_image_mhd_folder = os.path.join(data_path, 'Brains')
+    test_image_mhd_files = glob(os.path.join(test_image_mhd_folder, '*.mhd'))
+    test_label_mhd_folder = os.path.join(data_path, 'Labels')
+    test_label_mhd_files = glob(os.path.join(test_label_mhd_folder, '*.mhd'))
+
+
+
     test_image_mhd_files = natsorted(test_image_mhd_files)
     test_label_mhd_files = natsorted(test_label_mhd_files)
 
