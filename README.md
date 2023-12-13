@@ -68,7 +68,7 @@ You could also download specific checkpoints from this [link](https://drive.goog
 
 3. run `python test.py --dataset tumor --vit_name R50-ViT-B_16`. You could add `--is_savenii` to save image results. Please use software to visualize them or check check_dataset.ipynb for demo of how to visualize results.
 
-To **Train** the model, you need to convert mhd data to npz data, and generate corresponding list.txt file. Please check check_dataset.ipynb for example. 
+To **Train** the model, you need to convert mhd data to npz data, and generate corresponding list.txt file. Please check check_dataset.ipynb or preprocessing.ipynb for example. 
 
 ## Results
 
