@@ -129,8 +129,8 @@ def classify_test_to_cases(test_npz_files, save_folder=None):
 if __name__ == "__main__":
 
     print("Converting testing data...")
-    test_image_mhd_files = glob('../data/tumor/Testing/Brains/*.mhd')
-    test_label_mhd_files = glob('../data/tumor/Testing/Labels/*.mhd')
+    test_image_mhd_files = glob('../data/tumor/raw/Brains/*.mhd')
+    test_label_mhd_files = glob('../data/tumor/raw/Labels/*.mhd')
     test_image_mhd_files = natsorted(test_image_mhd_files)
     test_label_mhd_files = natsorted(test_label_mhd_files)
 
